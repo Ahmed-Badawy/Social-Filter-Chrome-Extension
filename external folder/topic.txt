@@ -1,0 +1,4 @@
+Internet is filled with ADs & stuff you don't want to see Like spoilers, Ads or celebrity you don't want to hear about. 
+hide them all with our plugin. you choose the keywords you don't want to see & we hide topics that contains that word from your browser view. don't worry you still can read them if you hover over the red hidden mark.
+
+It works with: Facebook, Twitter, Youtube, Google-Plus, Riddit.

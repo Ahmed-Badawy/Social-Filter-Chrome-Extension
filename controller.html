@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+    <title>Editing Disabled Words</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">	
+    <script type="text/javascript" src='js/angular.min.js'></script>
+    <script type="text/javascript" src='js/app.js'></script>
+    <style type="text/css">
+    body{
+    	font-family: tahoma;
+    	font-weight: bold;
+    }
+    .btn{
+    	margin-bottom:5px;
+    }
+    </style>
+</head>
+<body class='container' ng-controller='mainController' style="width:600px">
+
+<h1>Words to hide:</h1>
+
+
+<form ng-submit='add_new_word()'>
+    <input class='form-control' ng-model='new_word'/>
+    <button class='btn btn-primary btn-block' type='submit'><span class="fa fa-plus-square"></span> Add Word</button>
+</form>
+
+
+<div class="clearfix"></div><br>
+
+<div class="well">
+    <span ng-repeat='n in hidden_words track by $index'>
+        <button class='btn btn-danger' ng-click='remove_hidden_word($index)'><span class="fa fa-remove"></span> {{n}}</button> 
+    </span>
+</div>
+
+<div class='alert alert-warning'>
+    <p>How does this work ?</p>
+    <ol>
+        <li>define unwanted words</li>
+        <li>go to any social website (Facebook, Twitter, Google-Plus, Riddet)</li>
+        <li>any post with the unwanted words in it will be hidden</li>
+        <li>you can hover over the hidden post to read it</li>
+    </ol>
+    <p>Socila Fitler is case sensitive, so you need to mind what you write</p>
+    <p>Socila Fitler works with (Facebook, Twitter, Youtube, Riddet, Google-Plus) </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    
+
+<hr>
+<div class='alert alert-info' style='border:5px double #337ab7'>
+
+<div class="col-xs-4 text-center">
+    <img src="images/me3.jpg" style='width:100%;' class='img-rounded'>
+    <p style='font-size:130%'>Hire Me</p>
+</div>
+
+<div class="col-xs-8">
+
+        <h5>Hi! My name is Ahmed Badawy. I am a talented 25 years old Egyptian (Full Stack Web Developer) with a basic Java & Android Development Background. Currently Searching for a full-time job in US, Europe & Canada. if you have any vacancy or you can help me in any way, please contact me. 
+        <a href="http://ahmed-badawy.com/site/cv" class='btn btn-default btn-xs' target="_blank">My C.V</a>
+        <br><br>
+
+<table class='table-hover'>
+    <tr>
+        <td><span class='fa fa-at'></span>  Email </td>
+        <td> &nbsp; : &nbsp; <a href="mailto:me@ahmed-badawy.com">me@ahmed-badawy.com</a></td>
+    </tr>
+    <tr>
+        <td><span class='fa fa-phone'></span>  Phone </td>
+        <td> &nbsp; : &nbsp; 020 01111988246</td>
+    </tr>
+    <tr>
+        <td><span class='fa fa-edge'></span>  Website </td>
+        <td> &nbsp; : &nbsp; <a href="http://ahmed-badawy.com/site" target='_blank'>Ahmed-Badawy.com</a></td>
+    </tr>
+    <tr>
+        <td><span class='fa fa-user'></span>  Who Am I </td>
+        <td> &nbsp; : &nbsp; <a href="http://Ahmed-Badawy.com/site/cv" target='_blank'>My C.V</a></td>
+    </tr>    
+</table>
+
+</div>
+
+<div class="clearfix"></div>
+</div>
+
+<hr>
+<a href='http://cv.ahmed-badawy.com' class='pull-right' style='color:#999;margin:0;padding:0;display:inline;' target="_blank">Ahmed Badawy</a>
+
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>
